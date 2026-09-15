@@ -19,5 +19,8 @@ jobs:
         env:
           TZ: Asia/Shanghai
           NETEASE_COOKIE: ${{ secrets.NETEASE_COOKIE }}
+          # Server酱：填了就推送到微信，不填就不发
+          SERVERCHAN_SEND_URL: ${{ secrets.SERVERCHAN_SEND_URL }}
+          # 钉钉（可选）：填了就发，不填就不发
           DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
           DINGTALK_SECRET: ${{ secrets.DINGTALK_SECRET }}
